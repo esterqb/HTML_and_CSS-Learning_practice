@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title> tablas maria </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--table es para hacer una tabla-->
+        <!--th cabecero de la tabla-->
+        <!--BORDER para hacer el ancho del borde exterior (en px)-->
+        <!--CELLSPACING espacio del borde entre celdas (sin px, no lleva nada)-->
+        <!--CELLPADDING para hacer el espacio del borde entre una celda y el contenido(sin px, no lleva nada)-->
+        <!--Para aumentar o disminuir el tamaño de la tabla se usa WIDTH (ancho) y HEIGHT (alto) y se pone en px-->
+        <!--Con style="border: solid black 1px;" se cambia el borde de la tabla, solid es para que se vea y no salga transparente, y también añades color. 1px es el grosor del borde-->
+        <table cellspacing="0" cellpadding="0" width="500px" height="200px" style="border: solid black 1px;">
+            <!--Justo debajo de table se pone CAPTION si quieres poner título sin celda a una tabla. Se le puede meter cualquier atributo para cambiar tamaño, fuente o h1 etc-->
+            <caption style="text-align: left;"> <h6>Tablas con apuntes en el código</h6></caption>
+            <!--para añadir las FILAS se usa la etiqueta tr-->
+            <tr style="background-color:blue;">
+                <!--Para cada columna, td-->
+                <td rowspan="2" style="vertical-align: center; background-color: aquamarine; border:solid black 1px;">
+                    <!--ROWSPAN número de filas que ocupa la celda (combinar filas) sin px ni nada, de arriba a abajo-->
+                    <!--COLSPAN número de columnas que ocupa la celda (combinar columnas) sin px ni nada, hacia los lados-->
+                    <!--style="vertical-align: bottom;"> vertical align es para centrar el texto arriba(top), centro (center) o abajo (bottom)-->
+                    <!--style="text-align: center;"> text align es para centrar el texto izquierda(left), centro(center) o derecha(right)-->
+                    <!--style="border: solid black 1px;" también se añade a los td para añadirle border a esa celda-->
+                    <!--COLUMNA 1-->
+                    UNO
+                </td>
+                <td colspan="2" style="background-color: brown; border: solid black 1px;">
+                    <!--COLUMNA 2-->
+                    DOS
+                </td>
+                <td>
+                    <!--COLUMNA 3-->
+                    TRES
+                </td>
+            </tr>
+            <!--SEGUNDA FILA-->
+            <tr>
+                <td>
+                    <!--COLUMNA 4-->
+                    CUATRO
+                </td>
+                <td>
+                    <!--COLUMNA 5-->
+                    CINCO
+                </td>
+                <td>
+                    <!--COLUMNA 6-->
+                    SEIS
+                </td>
+            </tr>
+        </table>
+</html>
