@@ -12,20 +12,58 @@
                 <fieldset>
                     <h1>Formulario</h1>
 
-                        <!--NOMBRE APELLIDOS TLF-->
+                        <!--NOMBRE-->
                         <label>Nombre</label>
                         <br>
                         <input type="text" name="name" value="" size="20" maxlenght="30" required>
                         <br>
 
+                        <!--APELLIDOS-->
                         <label>Apellidos</label>
                         <br>
                         <input type="text" name="surname" value="" size="20" maxlenght="30" required>
                         <br>
                         
+                        <!--TLFN-->
                         <label>Teléfono</label>
                         <br>
                         <input type="text" name="phone" value="" size="20" maxlenght="30" required>
+                        <br>
+
+                        <!--GÉNERO-->
+                        <label>Género</label>
+                        <br>
+                        <input type="radio" name="genero" value="M" checked> Mujer
+                        <br>
+                        <input type="radio" name="genero" value="H"> Hombre
+                        <br>
+
+                        <!--SUGERENCIAS-->
+                        <label>Sugerencias</label>
+                        <br>
+                        <textarea name="consulta" rows="4" cols="20">Escribe tus sugerencias</textarea>
+                        <br>
+
+                        <!--CHECKBOX NOVEDADES-->
+                        <input type="checkbox" name="novedades" checked> Deseo recibir novedades
+                        <br>
+
+                        <!--OPINA-->
+                        <label>Opina de nuestra Web</label>
+                        <br>
+                        <select size="1" name="opinion">
+                            <option value="opinion1">Me gusta mucho</option>
+                            <option value="opinion2">Me gusta</option>
+                            <option value="opinion3">Indiferente</option>
+                            <option value="opinion4">No me gusta</option>
+                        </select>
+                        <br>
+                        <br>
+
+                        <!--BOTONES-->
+                        <button type="submit" value="Enviar">Enviar</button>
+                        <button type="submit" value="Enviar">Enviar</button>
+                        <br>
                         <br>
                 </fieldset>
             </form>
