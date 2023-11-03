@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <link>
+        <title>Práctica 6, ejercicio 6</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="seis.css" type="text/css">
+    </head>
+    
+    <body>
+        <form action="Práctica 6, ejercicio 6.html">
+
+            <!--DATOS PERSONALES-->
+            <h2>Datos Personales</h2>
+            <hr>
+            <p>Proporcionar la siguiente ingotmación de contacto:</p>
+
+            <fieldset>
+                <legend class="uno">*Campos Obligatorios</legend>
+                <fieldset class="nombre">
+                    
+                    <label>Nombre</label>
+                    <input type="text" name="name" size="10" maxlenght="15" required>
+                    <br>
+    
+                    <label>E-mail</label>
+                    <input type="text" name="mail" size="10" maxlenght="15" required>
+                    <br>
+    
+                    <label>País</label>
+                    <select required>
+                        <option value="1">***Escoja País***</option>
+                        <option value="2">Alemania</option>
+                        <option value="3">España</option>
+                        <option value="4">Francia</option>
+                        <option value="5">Italia</option>
+                    </select>
+                    <br>
+    
+                    <label>Ciudad/Población</label>
+                    <select required>
+                        <option value="1"> </option>
+                        <option value="2">Hamburgo</option>
+                        <option value="3">Barcelona</option>
+                        <option value="4">Lyon</option>
+                        <option value="5">Cagliari</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset class="apellidos">
+                    <label>Apellidos</label>
+                    <input type="text" name="surname" size="10" maxlenght="15" required>
+                    <br>
+
+                    <label>Sexo</label>
+                    <select required>
+                        <option value="zero"> </option>
+                        <option value="h">Hombre</option>
+                        <option value="m">Mujer</option>
+                    </select>
+                    <br>
+
+                    <label>Provincia/Estado</label>
+                    <select required>
+                        <option value="cero"> </option>
+                        <option value="C">Córdoba</option>
+                        <option value="A">Almería</option>
+                        <option value="S">Sevilla</option>
+                        <option value="M">Málaga</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend class="dos">(i) en caso de no existir en esta lista la ciudad, colóquelo en el campo de "Dirección"</legend>
+                    <fieldset class="direccion">
+                    <label>Dirección o<br>Dirección Postal</label>
+                    <textarea class="scrollable-textarea" cols="45" rows="4"> </textarea>
+                    <br>
+
+                    <label>Teléfono</label>
+                    <input type="text" name="phone" size="20" maxlength="12">
+                    <br>
+
+                    <label>Estudios</label>
+                    <select required>
+                        <option value="none"> </option>
+                        <option value="dam">DAM</option>
+                        <option value="daw">DAW</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="CP">
+                    <label>Código o <br>Apartado Postal</label>
+                    <input type="text" name="codigo" size="10" maxlenght="15" required>
+                </fieldset>
+            </fieldset>
+
+            <!--DATOS DE PROGRAMA-->
+            <h2>Datos de Programa</h2>
+            <hr>
+            <fieldset>
+                <input type="checkbox" checked>
+                <label class="solicitar">Solicitar Información en Programas de Formación(Master/Curso)</label>
+                <br>
+
+                <label>Área</label>
+                    <select>
+                        <option value="nada">***Escoja un área***</option>
+                        <option value="ciencias">Ciencias</option>
+                        <option value="letras">Letras</option>
+                    </select> 
+                    <br>
+
+                <label>Programa de <br>Estudio</label>
+                    <select>
+                        <option value="na"> </option>
+                        <option value="becado">Becado</option>
+                        <option value="no becado">No becado</option>
+                    </select> 
+                    <br>
+
+                <label>¿Dónde estudió <br>nuestro curso?</label>
+                <input type="text" name="donde" size="30" maxlength="15">
+                <br>
+
+                <input type="checkbox">
+                <label class="solicitar">Solicitar Libros/Nutriber</label>
+            </fieldset>
+
+            <!--INFORMACIÓN ADICIONAL-->
+            <h2>Información Adicional</h2>
+            <hr>
+            <fieldset>
+                <label>Comentarios</label>
+                <textarea class="scrollable-textarea" cols="35" rows="4"> </textarea>
+            </fieldset>
+
+            <br><br><br>
+            
+            <!--BOTONES BORRAR Y ENVIAR-->
+            <button type="submit" name="enviar">Enviar</button>
+            <button type="erase" name="borrar">Borrar</button>
+        </form>
+    </body>
+</html>

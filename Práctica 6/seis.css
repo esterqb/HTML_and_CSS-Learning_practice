@@ -1,0 +1,41 @@
+body{
+  margin: 20px;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  color: #D90000;
+  margin-bottom: 3px;
+}
+hr{
+  border-top: 1px dotted black;
+}
+fieldset{
+  border-style: none;
+}
+.uno,.dos{
+  color:#007CF1;
+}
+.nombre{
+  float: left;
+}
+.apellidos{
+  float: right;
+}
+.scrollable-textarea{
+  overflow:scroll;
+}
+.direccion{
+  float: left;
+}
+.CP{
+  float: right;
+}
+.solicitar{
+  font-weight: bolder;
+  color:  #007CF1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"]{
+  
+}
