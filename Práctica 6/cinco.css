@@ -1,7 +1,9 @@
 h1 {
     background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
-    color: transparent;
+    /*Xdeg para crear el degradado en cierto ángulo*/
+    color: transparent; /*pone el texto transparente y así se ve el color de fondo de background-image*/
+    -webkit-background-clip: text; /*para que se "recorte" el fondo y así solo se vea TEXT, así se ve la imagen
+    de fondo aplicada al texto. propiedad para navegadores con webkit*/
     font-size:300%;
     text-align: center;
     margin: 10px 1px;
@@ -57,11 +59,11 @@ input{
   float: left;
 }
 .enlace{
-  margin-top: 1.999%;
   float: inline-start;
   font-size: large;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  text-decoration: none;
 }
 .enlace:link{
   color: #60DBFF;
@@ -78,6 +80,14 @@ input{
 }
 .rainbow-button {
   border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  border-image-slice: 1; /*para cortar la imagen de fondo*/
+  background-color: #F6F6F6;
+}
+.rainbow-button:hover::after{
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  border-image-slice: 1; /*para cortar la imagen de fondo*/
+	border-radius: 15px;
+  color: white;
+  border:none;
+  content: "Click para enviar";
 }
