@@ -7,138 +7,185 @@
     
     <body>
         <form action="Práctica 6, ejercicio 6.html">
+            <div>
 
-            <!--DATOS PERSONALES-->
-            <h2>Datos Personales</h2>
-            <hr>
-            <p>Proporcionar la siguiente información de contacto:</p>
+                <!--DATOS PERSONALES-->
+                <h2>Datos Personales</h2>
+                <hr>
+                <p>Proporcionar la siguiente información de contacto:</p>
+                <p class="azulito">*Campos Obligatorios</p>
 
-            <fieldset>
-                <legend class="uno">*Campos Obligatorios</legend>
-                <fieldset class="nombre">
-                    
-                    <label>Nombre</label>
-                    <input type="text" name="name" size="10" maxlenght="15" required>
-                    <br>
-    
-                    <label>E-mail</label>
-                    <input type="text" name="mail" size="10" maxlenght="15" required>
-                    <br>
-    
-                    <label>País</label>
-                    <select required>
-                        <option value="1">***Escoja País***</option>
-                        <option value="2">Alemania</option>
-                        <option value="3">España</option>
-                        <option value="4">Francia</option>
-                        <option value="5">Italia</option>
-                    </select>
-                    <br>
-    
-                    <label>Ciudad/Población</label>
-                    <select required>
-                        <option value="1"> </option>
-                        <option value="2">Hamburgo</option>
-                        <option value="3">Barcelona</option>
-                        <option value="4">Lyon</option>
-                        <option value="5">Cagliari</option>
-                    </select>
-                </fieldset>
-                
-                <fieldset class="apellidos">
-                    <label>Apellidos</label>
-                    <input type="text" name="surname" size="10" maxlenght="15" required>
-                    <br>
+                <div class="div1">
 
-                    <label>Sexo</label>
-                    <select required>
-                        <option value="zero"> </option>
-                        <option value="h">Hombre</option>
-                        <option value="m">Mujer</option>
-                    </select>
-                    <br>
+                    <!--NOMBRE, EMAIL, PAÍS, CIUDAD-->
+                    <div class="datos">
+                        <div class="columna"><label>Nombre</label></div>
+                        <div class="columna"><label>E-mail</label></div>
+                        <div class="columna"><label>País</label></div>
+                        <div class="columna"><label>Ciudad/Población</label></div>                    
+                    </div>
 
-                    <label>Provincia/Estado</label>
-                    <select required>
-                        <option value="cero"> </option>
-                        <option value="C">Córdoba</option>
-                        <option value="A">Almería</option>
-                        <option value="S">Sevilla</option>
-                        <option value="M">Málaga</option>
-                    </select>
-                </fieldset>
-            </fieldset>
+                    <!--INPUTS1-->
+                    <div class="casillas">
+                        <div class="columna"><input class="sombreado" type="text" name="name" size="10" maxlenght="15" required></div>
+                        <div class="columna"><input class="sombreado" type="text" name="mail" size="10" maxlenght="15" required></div>
+                        <div class="columna">
+                            <select class="pais sombreado" required>
+                                <option value="1">***Escoja País***</option>
+                                <option value="2">Alemania</option>
+                                <option value="3">España</option>
+                                <option value="4">Francia</option>
+                                <option value="5">Italia</option>
+                            </select>
+                        </div>
+                        <div class="columna">
+                            <select class="ciudades sombreado" required>
+                                <option value="1"> </option>
+                                <option value="2">Hamburgo</option>
+                                <option value="3">Barcelona</option>
+                                <option value="4">Lyon</option>
+                                <option value="5">Cagliari</option>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <!--APELLIDOS, SEXO, PROVINCIA-->
+                    <div class="datos">
+                        <div class="columna"><label>Apellidos</label></div>
+                        <div class="columna"><label>Sexo</label></div>
+                        <div class="columna"><label>Provincia/Estado</label></div>
+                        <div class="columna"></div>
+                    </div>
 
-            <fieldset>
-                <legend class="dos">(i) en caso de no existir en esta lista la ciudad, colóquelo en el campo de "Dirección"</legend>
-                    <fieldset class="direccion">
-                    <label>Dirección o<br>Dirección Postal</label>
-                    <textarea class="scrollable-textarea" cols="45" rows="4"> </textarea>
-                    <br>
+                    <!--INPUTS2-->
+                    <div class="casillas">
+                        <div class="columna">
+                            <input class="sombreado1" type="text" name="surname" size="10" maxlenght="15" required>
+                        </div>
+                        <div class="columna">
+                            <select class="sombreado1 sexo" required>
+                                <option value="zero">Seleccione</option>
+                                <option value="h">Hombre</option>
+                                <option value="m">Mujer</option>
+                            </select>
+                        </div>
+                        <div class="columna">
+                            <select class="sombreado1 provincia" required>
+                                <option value="cero"> </option>
+                                <option value="C">Córdoba</option>
+                                <option value="A">Almería</option>
+                                <option value="S">Sevilla</option>
+                                <option value="M">Málaga</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-                    <label>Teléfono</label>
-                    <input type="text" name="phone" size="20" maxlength="12">
-                    <br>
+                <!--(i) en caso de-->
+                <p class="azulito">(i) en caso de no existir en esta lista la ciudad, colóquelo en el campo de "Dirección"</p>
 
-                    <label>Estudios</label>
-                    <select required>
-                        <option value="none"> </option>
-                        <option value="dam">DAM</option>
-                        <option value="daw">DAW</option>
-                    </select>
-                </fieldset>
+                <div class="div1">
+                    <!--DIRECCION, TLFN, ESTUDIOS-->
+                    <div class="datos">
+                        <div class="columna"><label>Dirección o<br>Dirección Postal</label></div>
+                        <div class="columna"></div>
+                        <div class="columna"></div>
+                        <div class="columna"><label>Teléfono</label></div>
+                        <div class="columna"><label>Estudios</label></div>
+                    </div>
 
-                <fieldset class="CP">
-                    <label>Código o <br>Apartado Postal</label>
-                    <input type="text" name="codigo" size="10" maxlenght="15" required>
-                </fieldset>
-            </fieldset>
+                    <!--INPUTS1-->
+                    <div class="casillas">
+                        <div class="columna"><textarea class="scrollable-textarea sombreado" cols="45" rows="4"></textarea></div>
+                        <div class="columna"></div>
+                        <div class="columna"></div>
+                        <div class="columna"><input class="sombreado" type="text" name="phone" size="20" maxlength="12"></div>
+                        <div class="columna">
+                            <select class="study sombreado">
+                                <option class="estudios" value="none"> </option>
+                                <option class="estudios" value="dam">DAM</option>
+                                <option class="estudios" value="daw">DAW</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--CP-->
+                    <div class="datos">
+                        <div class="columna"><label>Código o<br>Apartado Postal</label></div>
+                        <div class="columna"></div>
+                        <div class="columna"></div>
+                        <div class="columna"></div>
+                    </div>
+
+                    <!--INPUTS2-->
+                    <div class="casillas">
+                        <div class="columna"><input class="sombreado" type="text" name="codigo" size="10" maxlenght="15" required></div>
+                        <div class="columna"></div>
+                        <div class="columna"></div>
+                        <div class="columna"></div>
+                    </div>
+                </div>
+            </div>
 
             <!--DATOS DE PROGRAMA-->
-            <h2>Datos de Programa</h2>
-            <hr>
-            <fieldset>
+            <div>
+                <h2>Datos de Programa</h2>
+                <hr>
+                <!--CHECKBOX-->
                 <input type="checkbox" checked>
                 <label class="solicitar">Solicitar Información en Programas de Formación(Master/Curso)</label>
                 <br>
+                <div class="div1">
+                    <div class="datos">
+                        <div class="columna"><label>Área</label></div>
+                        <div class="columna"><label>Programa de <br>Estudio</label></div>
+                        <div class="columna"><label>¿Dónde estudió <br>nuestro curso?</label></div>
+                    </div>
 
-                <label>Área</label>
-                    <select>
-                        <option value="nada">***Escoja un área***</option>
-                        <option value="ciencias">Ciencias</option>
-                        <option value="letras">Letras</option>
-                    </select> 
-                    <br>
-
-                <label>Programa de <br>Estudio</label>
-                    <select>
-                        <option value="na"> </option>
-                        <option value="becado">Becado</option>
-                        <option value="no becado">No becado</option>
-                    </select> 
-                    <br>
-
-                <label>¿Dónde estudió <br>nuestro curso?</label>
-                <input type="text" name="donde" size="30" maxlength="15">
+                    <!--INPUTS-->
+                    <div class="data">
+                        <div class="columna">
+                            <select class="sombreado area">
+                                <option value="nada">***Escoja un área***</option>
+                                <option value="ciencias">Ciencias</option>
+                                <option value="letras">Letras</option>
+                            </select> 
+                        </div>
+                        <div class="columna">
+                            <select class="sombreado programa">
+                                <option value="na"> </option>
+                                <option value="becado">Becado</option>
+                                <option value="no becado">No becado</option>
+                            </select>
+                        </div>
+                        <div class="columna"><input class="sombreado donde" type="text" name="donde" size="30" maxlength="15"></div>
+                    </div>
+                </div>
                 <br>
-
-                <input type="checkbox">
-                <label class="solicitar">Solicitar Libros/Nutriber</label>
-            </fieldset>
-
+                <!--CHECKBOX-->
+                    <input type="checkbox" class="text">
+                    <label class="solicitar">Solicitar Libros/Nutriber</label>
+            </div>
             <!--INFORMACIÓN ADICIONAL-->
-            <h2>Información Adicional</h2>
-            <hr>
-            <fieldset>
-                <label>Comentarios</label>
-                <textarea class="scrollable-textarea" cols="35" rows="4"> </textarea>
-            </fieldset>
+            <div>
+                <h2>Información Adicional</h2>
+                <hr>
+                <div class="div1">
+                    <div class="datos"><label>Comentarios</label></div>
+                    <div class="casillas"><textarea class="scrollable-textarea1 sombreado" cols="35" rows="4"> </textarea></div>
+                    <div class="datos"></div>
+                    <div class="data"></div>
+                </div>
+
+            </div>
 
             <br><br><br>
             
             <!--BOTONES BORRAR Y ENVIAR-->
-            <button type="submit" name="enviar">Enviar</button>
-            <button type="erase" name="borrar">Borrar</button>
+            <div class="botones">
+                <button type="submit" name="enviar">Enviar</button>
+                <button type="erase" name="borrar">Borrar</button>
+            </div>
         </form>
     </body>
 </html>
