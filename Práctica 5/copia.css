@@ -1,0 +1,37 @@
+body{
+	margin: 0px;
+	padding: 30px;
+	font-family: Arial;
+}
+header{ 
+	background-color: #f0f0f0;
+	border-bottom: 5px solid #c3c3c3;
+	padding: 20px;
+}
+
+ul{
+	list-style: none;
+}
+ul > li{
+	float: left; 
+	text-align: center;
+	padding: 0px 20px;
+	border: 2px solid red;
+	background-color: red; 
+	margin: 0px 10px;
+}
+ul > li > a{ 
+	font-size: 18px;
+	color: white;
+}
+
+ul > li > ul{ 
+	display: none;
+    width: 50px;
+}
+ul > li:hover > ul{ 
+	display: block;
+}
+ul > li > ul > li{ 
+	float: none;
+}
