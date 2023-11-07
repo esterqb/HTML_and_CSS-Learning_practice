@@ -1,0 +1,53 @@
+div{
+    align-items: center;
+    margin:3px;
+    
+}
+.bloque1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.foto{
+    display: flex;
+    flex-direction: column;
+    width: 36vh;
+    align-items: center;
+}
+.pic{
+    width:270px;
+    height: auto;
+}
+.adress{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 36vh;
+    align-items: center;
+}
+.factura{
+    display: flex;
+    flex-direction: column;
+    width: 36vh;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+.cuadro{
+    border-radius: 2%;
+    width: 100vh;
+    
+}
+.bloque2,.bloque3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    padding:3px;
+    width: 100%;
+}
+.td{
+    text-align: center;
+    font-weight: bold;
+}
