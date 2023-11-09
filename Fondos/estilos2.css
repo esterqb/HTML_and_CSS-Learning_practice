@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: yellow;
+}
+main{ 
+	width: 80%;
+	margin: 0 auto;
+}
+.cabecera{
+	width: 100%;
+	background-color: red;
+	color: white;
+	height: 35px;
+	text-align: center;
+	padding: 40px 0px;
+}
+.cont1{
+	width: calc(200px - 46px); 
+	/*background: url("fondo.jpg") #eaf7ff; */
+	background-image: url("fondo.jpg");
+	background-color: #eaf7ff;
+	background-repeat: no-repeat; 
+	background-position: top;
+	background-size: contain; 
+	color: black;
+	float: left;
+	padding: 20px;
+	border: 3px solid blue;
+	border-radius: 20px;
+}
+.cont2{
+	width: calc(100% - 240px);  
+	background-color: green;
+	float: left;
+	color: white;
+	padding: 20px;
+}
