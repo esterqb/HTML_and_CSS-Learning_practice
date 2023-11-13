@@ -1,0 +1,130 @@
+*{ /* empezamos con un lienzo en blanco para la página*/
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #192666;
+    background-image: url(imagenes/fondo.gif);
+    background-repeat: repeat-x;
+    background-color: #F2F5FE;
+    font-size: small;
+    flex-direction: row;
+}
+h1,h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    font-weight: bold;
+}
+.contenedor{
+    width:770px;
+    text-align: center;
+}
+.central{
+    width:530px;
+    float: left;
+    flex-direction: column;
+}
+aside{
+    width:200px;
+    float:left;
+    flex-direction: column;
+}
+header{
+    height:100px;
+    background-image: url(imagenes/cabecera.jpg);
+}
+.logo{
+    color: white;
+    text-align: center;
+    float: left;
+}
+.logo:hover{
+    color:grey;
+}
+.browser{
+    float: left;
+    text-align: center;
+}
+.menu{
+    background-color: #192666;
+    margin: 0px 5px;
+    padding: 10px 0px 0px 0px;
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
+a{
+    display: block;
+    background-color: #253575;
+    color:#b5c4e3;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #31479B;
+}
+/*.entrada?????{         7.CONTENIDO: A CUÁL CORRESPONDE
+    background-color: white;
+    width: 760px;
+    margin:0px 5px;
+}*/
+.entrada{
+    background-image: url(imagenes/fondo_articulo.jpg);
+    background-repeat: no-repeat;
+}
+.entrada>h2{
+    background-color: #D3e5FD;
+}
+/*C. EL ENLACE DENTRO DE CADA H2 TIENE
+    color:#192666;
+
+    Y AL POSICIONARSE CON EL RATÓN ENCIMA EL COLOR CAMBIA A
+    color: #4F6AD7;
+*/
+.info{
+    padding-bottom:10px;
+    border-bottom:1px #DEE5DF;
+}
+.mifoto{
+    float:left;
+}
+.secundario{
+    background-color: #CEDBF9;
+    background-image: url(imagenes/fondo_columna.gif);
+    background-repeat: no-repeat;
+}
+.secundario>h3{
+    background-color: #A0B9F3;
+    color: #192666;
+    padding:10px 0px 10px 10px;
+    margin-top: 20px;
+}
+.secundario>ul{
+    list-style: none;
+}
+.secundario>ul>li{
+    border-bottom: 1px #E0E8FA;
+}
+.secundario>ul>li>a{
+    display: block;
+    text-decoration: none;
+}
+.secundario>ul>li>a:hover{
+    background-color: #E0E8FA;
+    color:#6685CC;
+}
+.pie{
+    background-image: url(imagenes/fondo_pie.jpg);
+    color:#6685CC;
+    flex-direction: row;
+    float: left;
+}
+.pie1{
+    float: left;
+    flex-direction: column;
+}
