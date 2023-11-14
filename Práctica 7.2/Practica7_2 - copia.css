@@ -21,6 +21,7 @@ h3{
 }
 .contenedor{
     width:770px;
+    height: auto;
 
 }
 .central{
@@ -147,11 +148,19 @@ li>a:hover{
     background-color: #E0E8FA;
     color:#6685CC;
 }
-.pie{
+.blank{
+    width: 770px;
+    height:70px;
+    float: left;
+    flex-direction: row;
+}
+footer{
     background-image: url(imagenes/fondo_pie.jpg);
     color:#6685CC;
     flex-direction: row;
     float: left;
+    height: 90px;
+    width: 770px;
 }
 .pie1{
     float: left;

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <title>Práctica 7.2</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Practica7_2 - copia.css">
+    <link rel="stylesheet" href="Practica7_2-copia.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
             </div>
             <!--INPUT BUSCADOR Y BOTÓN BUSCAR-->
             <div class="browser">
-                <input type="text" name="browser" size="20" maxlenght="25">
+                <input type="text" name="browser" size="20">
                 <button type="submit" name="Buscar" value="Buscar">Buscar</button>
             </div>
         </header>
@@ -24,7 +25,7 @@
         <!--MAIN DE LA PÁGINA-->
         <main>
             <!--MENÚ APARTADOS HORIZONTAL-->
-            <div class="menu">
+            <nav class="menu">
                 <ul>
                     <li><a href="#6">Inicio</a></li>
                     <li><a href="#6">Blog</a></li>
@@ -34,7 +35,7 @@
                     <li><a href="#6">Contacto</a></li>
                     <li><a href="#6">Enlaces</a></li>
                 </ul>
-            </div>
+            </nav>
             
             <!--COLUMNA CENTRAL-->
             <div class="central">
@@ -121,7 +122,7 @@
                         <a href="#3"><h3>Sobre mí</h3></a>
                     </div>
                     <div class="mifoto">
-                        <img src="imagenes/mifoto.gif">
+                        <img src="imagenes/mifoto.gif" alt="imagen">
                     </div>
                     <div class="data1">Nombre apellidos</div>
                     <div class="data2">
@@ -184,13 +185,18 @@
             </aside>
         </main>
 
+        <!--ENTRE EL BODY Y FOOTER-->
+        <div class="blank">
+
+        </div>
+
         <!--PIE DE PÁGINA-->
-        <div class="pie">
+        <footer>
                 <div class="pie1">
                     © 200X Nombre de empresa
                 </div>
                 <!--bloque en blanco del lado-->
                 <div class="cajoncitos"></div>
-        </div>
+        </footer>
     </div>
 </body>
