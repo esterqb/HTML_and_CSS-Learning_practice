@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <title>Práctica 7.2</title>
     <meta charset="UTF-8">
@@ -16,177 +17,202 @@
             </div>
             <!--INPUT BUSCADOR Y BOTÓN BUSCAR-->
             <div class="browser">
-                <input type="text" name="browser" size="20" maxlenght="25">
+                <input type="text" name="browser" size="20">
                 <button type="submit" name="Buscar" value="Buscar">Buscar</button>
-            </div>
-            <!--MENÚ APARTADOS HORIZONTAL-->
-            <div class="menu">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Blog</li>
-                    <li>Sobre mí</li>
-                    <li>Fotos</li>
-                    <li>Portfolio</li>
-                    <li>Contacto</li>
-                    <li>Enlaces</li>
-                </ul>
             </div>
         </header>
 
         <!--MAIN DE LA PÁGINA-->
         <main>
+            <!--MENÚ APARTADOS HORIZONTAL-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#6">Inicio</a></li>
+                    <li><a href="#6">Blog</a></li>
+                    <li><a href="#6">Sobre mí</a></li>
+                    <li><a href="#6">Fotos</a></li>
+                    <li><a href="#6">Portfolio</a></li>
+                    <li><a href="#6">Contacto</a></li>
+                    <li><a href="#6">Enlaces</a></li>
+                </ul>
+            </nav>
+            
+            <div class="pagina">
+                <!--COLUMNA CENTRAL-->
+                <div class="central">
 
-            <!--COLUMNA CENTRAL-->
-            <div class="central">
+                    <!--PRIMERA ENTRADA DE TEXTO-->
+                    <article class="entrada">
+                        <div class="vacio"> </div>
+                        <!--LÍNEA 1: TÍTULO LOREM IPSUM-->
+                        <div class="titulo2">
+                            <h2><a href="#7">Lorem ipsum dolor sit amet</a></h2>
+                        </div>
+                        <!--LÍNEA 2: DÍA, MES, HORA Y ENLACES DISEÑO NOMBRE ETC-->
+                        <div class="info">
+                            <p>dd-mm-aaaa 00:00
+                            <a class="enlace1" href="#1">diseño</a>
+                            <a class="enlace1" href="#1">Nombre</a>
+                            <a class="enlace1" href="#1">Apellido</a>
+                            <a class="enlace1" href="#1">Añadir comentario</a>
+                        </p>
+                        </div>
+                        <!--LÍNEA 3-TEXTO LOREM IPSUM-->
+                        <div class="texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum ex
+                            expedita saepe, quibusdam minima dignissimos quos cum consequatur libero
+                            culpa nemo facere porro sequi. Soluta rerum inventore optio! Quo.<br><br>
+                            <a href="#2">Seguir leyendo...</a>
+                            <br><br><br><br>
+                        </div>
+                    </article>
+                    
+                    <!--SEGUNDA ENTRADA DE TEXTO-->
+                    <article class="entrada">
+                        <div class="vacio"> </div>
+                        <!--LÍNEA 1: TÍTULO LOREM IPSUM-->
+                        <div class="titulo2">
+                            <h2><a href="#7">Lorem ipsum dolor sit amet</a></h2>
+                        </div>
+                        <!--LÍNEA 2: DÍA, MES, HORA Y ENLACES DISEÑO NOMBRE ETC-->
+                        <div class="info">
+                            <p>dd-mm-aaaa 00:00
+                            <a class="enlace1" href="#1">diseño</a>
+                            <a class="enlace1" href="#1">Nombre</a>
+                            <a class="enlace1" href="#1">Apellido</a>
+                            <a class="enlace1" href="#1">Añadir comentario</a>
+                        </p>
+                        </div>
+                        <!--LÍNEA 3-TEXTO LOREM IPSUM-->
+                        <div class="texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum ex
+                            expedita saepe, quibusdam minima dignissimos quos cum consequatur libero
+                            culpa nemo facere porro sequi. Soluta rerum inventore optio! Quo.<br><br>
+                            <a href="#2">Seguir leyendo...</a>
+                            <br><br><br><br>
+                        </div>
+                    </article>
 
-                <!--PRIMERA ENTRADA DE TEXTO-->
-                <article class="entrada">
-                    <!--LÍNEA 1: TÍTULO LOREM IPSUM-->
-                    <div class="titulo2">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                    </div>
-                    <!--LÍNEA 2: DÍA, MES, HORA Y ENLACES DISEÑO NOMBRE ETC-->
-                    <div class="info">
-                        dd-mm-aaaa 00:00
-                        <a class="enlace1" href="#1">diseño</a>
-                        <a class="enlace1" href="#1">Nombre</a>
-                        <a class="enlace1" href="#1">Apellido</a>
-                        <a class="enlace1" href="#1">Añadir comentario</a>
-                    </div>
-                    <!--LÍNEA 3-TEXTO LOREM IPSUM-->
-                    <div class="texto">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum ex<br>
-                        expedita saepe, quibusdam minima dignissimos quos cum consequatur libero<br>
-                        culpa nemo facere porro sequi. Soluta rerum inventore optio! Quo.<br>
-                        <a href="#2">Seguir leyendo...</a>
-                    </div>
-                </article>
-                
-                <!--SEGUNDA ENTRADA DE TEXTO-->
-                <article class="entrada">
-                    <!--LÍNEA 1: TÍTULO LOREM IPSUM-->
-                    <div class="titulo2">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                    </div>
-                    <!--LÍNEA 2: DÍA, MES, HORA Y ENLACES DISEÑO NOMBRE ETC-->
-                    <div class="info">
-                        dd-mm-aaaa 00:00
-                        <a class="enlace1" href="#1">diseño</a>
-                        <a class="enlace1" href="#1">Nombre</a>
-                        <a class="enlace1" href="#1">Apellido</a>
-                        <a class="enlace1" href="#1">Añadir comentario</a>
-                    </div>
-                    <!--LÍNEA 3-TEXTO LOREM IPSUM-->
-                    <div class="texto">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum ex<br>
-                        expedita saepe, quibusdam minima dignissimos quos cum consequatur libero<br>
-                        culpa nemo facere porro sequi. Soluta rerum inventore optio! Quo.<br>
-                        <a href="#2">Seguir leyendo...</a>
-                    </div>
-                </article>
+                    <!--TERCERA ENTRADA DE TEXTO-->
+                    <article class="entrada">
+                        <div class="vacio"> </div>
+                        <!--LÍNEA 1: TÍTULO LOREM IPSUM-->
+                        <div class="titulo2">
+                            <h2><a href="#7">Lorem ipsum dolor sit amet</a></h2>
+                        </div>
+                        <!--LÍNEA 2: DÍA, MES, HORA Y ENLACES DISEÑO NOMBRE ETC-->
+                        <div class="info">
+                            <p>dd-mm-aaaa 00:00
+                            <a class="enlace1" href="#1">diseño</a>
+                            <a class="enlace1" href="#1">Nombre</a>
+                            <a class="enlace1" href="#1">Apellido</a>
+                            <a class="enlace1" href="#1">Añadir comentario</a>
+                        </p>
+                        </div>
+                        <!--LÍNEA 3-TEXTO LOREM IPSUM-->
+                        <div class="texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum ex
+                            expedita saepe, quibusdam minima dignissimos quos cum consequatur libero
+                            culpa nemo facere porro sequi. Soluta rerum inventore optio! Quo.<br><br>
+                            <a href="#2">Seguir leyendo...</a>
+                            <br><br><br><br>
+                        </div>
+                    </article>
+                    <article class="articulo">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </article>
+                </div>
 
-                <!--TERCERA ENTRADA DE TEXTO-->
-                <article class="entrada">
-                    <!--LÍNEA 1: TÍTULO LOREM IPSUM-->
-                    <div class="titulo2">
-                        <h2>Lorem ipsum dolor sit amet</h2>
+                <!--SECCIÓN LATERAL-SECUNDARIO-->
+                <aside class="secundario">
+                    <!--APARTADO SOBRE MÍ-->
+                    <div class="vacio1"> </div>
+                    <div class="lateral1">
+                        <div class="sublateral1">
+                            <a href="#3"><h3 class="sobremi">Sobre mí</h3></a>
+                        </div>
+                        <div class="nombreapellidos">
+                            <div class="mifoto">
+                                <img src="imagenes/mifoto.gif" alt="imagen">
+                            </div>
+                            <div class="data1">Nombre apellidos</div>
+                            <div class="data2">
+                                Edad<br>
+                                Ciudad de residencia<br>
+                                <a href="#4">Mi perfil público</a>
+                                <br><br>
+                            </div>
+                        </div>
                     </div>
-                    <!--LÍNEA 2: DÍA, MES, HORA Y ENLACES DISEÑO NOMBRE ETC-->
-                    <div class="info">
-                        dd-mm-aaaa 00:00
-                        <a class="enlace1" href="#1">diseño</a>
-                        <a class="enlace1" href="#1">Nombre</a>
-                        <a class="enlace1" href="#1">Apellido</a>
-                        <a class="enlace1" href="#1">Añadir comentario</a>
+
+                    <!--APARTADO CATEGORÍAS-->
+                    <div class="lateral2">
+                        <div class="sublateral2">
+                            <h3>Categorías</h3>
+                        </div>
+
+                        <div class="cajoncitos">
+                            <br>
+                            <ul>
+                                <li><a href="#5">Categoría 1</a></li>
+                                <li><a href="#5">Categoría 2</a></li>
+                                <li><a href="#5">Categoría 3</a></li>
+                                <li><a href="#5">Categoría 4</a></li>
+                                <li><a href="#5">Categoría 5</a></li>
+                            </ul>
+                            <br><br>
+                        </div>
                     </div>
-                    <!--LÍNEA 3-TEXTO LOREM IPSUM-->
-                    <div class="texto">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum ex<br>
-                        expedita saepe, quibusdam minima dignissimos quos cum consequatur libero<br>
-                        culpa nemo facere porro sequi. Soluta rerum inventore optio! Quo.<br>
-                        <a href="#2">Seguir leyendo...</a>
+
+                    <!--APARTADO ARCHIVO-->
+                    <div class="lateral2">
+                        <div class="sublateral2">
+                            <h3>Archivo</h3>
+                        </div>
+                        
+                        <div class="cajoncitos">
+                            <br>
+                            <ul>
+                                <li><a href="#5">Enero 200X</a></li>
+                                <li><a href="#5">Diciembre 200X</a></li>
+                                <li><a href="#5">Noviembre 200X</a></li>
+                                <li><a href="#5">Octubre 200X</a></li>
+                                <li><a href="#5">Septiembre 200X</a></li>
+                            </ul>
+                            <br><br>
+                        </div>
                     </div>
-                </article>
+
+                    <!--APARTADO ENLACES-->
+                    <div class="lateral2">
+                        <div class="sublateral2">
+                            <h3>Enlaces</h3>
+                        </div>
+                        
+                        <div class="cajoncitos">
+                            <br>
+                            <ul>
+                                <li><a href="#5">Enlace 1</a></li>
+                                <li><a href="#5">Enlace 2</a></li>
+                                <li><a href="#5">Enlace 3</a></li>
+                                <li><a href="#5">Enlace 4</a></li>
+                                <li><a href="#5">Enlace 5</a></li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </aside>
             </div>
+            </main>
 
-            <!--SECCIÓN LATERAL-SECUNDARIO-->
-            <aside class="secundario">
-                <!--APARTADO SOBRE MÍ-->
-                <div class="lateral1">
-                    <div class="sublateral1">
-                        <a href="#3"><h3>Sobre mí</h3></a>
-                    </div>
-                    <div class="mifoto">
-                        <img src="imagenes/mifoto.gif">
-                    </div>
-                    <div class="data1">Nombre apellidos</div>
-                    <div class="data2">
-                        Edad<br>
-                        Ciudad de residencia<br>
-                        <a href="#4">Mi perfil público</a>
-                    </div>
-                </div>
+                <div class="espaciofooter"></div>
 
-                <!--APARTADO CATEGORÍAS-->
-                <div class="lateral2">
-                    <div class="sublateral2">
-                        <h3>Categorías</h3>
+                <!--PIE DE PÁGINA-->
+                <footer>
+                    <div class="pie1">
+                        © 200X Nombre de empresa
                     </div>
+                </footer>
+            
 
-                    <div class="cajoncitos">
-                        <ul>
-                            <li><a href="#5">Categoría 1</a></li>
-                            <li><a href="#5">Categoría 2</a></li>
-                            <li><a href="#5">Categoría 3</a></li>
-                            <li><a href="#5">Categoría 4</a></li>
-                            <li><a href="#5">Categoría 5</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--APARTADO ARCHIVO-->
-                <div class="lateral2">
-                    <div class="sublateral2">
-                        <h3>Archivo</h3>
-                    </div>
-                    
-                    <div class="cajoncitos">
-                        <ul>
-                            <li><a href="#5">Enero 200X</a></li>
-                            <li><a href="#5">Diciembre 200X</a></li>
-                            <li><a href="#5">Noviembre 200X</a></li>
-                            <li><a href="#5">Octubre 200X</a></li>
-                            <li><a href="#5">Septiembre 200X</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--APARTADO ENLACES-->
-                <div class="lateral2">
-                    <div class="sublateral2">
-                        <h3>Enlaces</h3>
-                    </div>
-                    
-                    <div class="cajoncitos">
-                        <ul>
-                            <li><a href="#5">Enlace 1</a></li>
-                            <li><a href="#5">Enlace 2</a></li>
-                            <li><a href="#5">Enlace 3</a></li>
-                            <li><a href="#5">Enlace 4</a></li>
-                            <li><a href="#5">Enlace 5</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-        </main>
-
-        <!--PIE DE PÁGINA-->
-        <div class="pie">
-                <div class="pie1">
-                    © 200X Nombre de empresa
-                </div>
-                <!--bloque en blanco del lado-->
-                <div class="cajoncitos"></div>
-        </div>
-    </div>
 </body>
