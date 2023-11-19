@@ -38,6 +38,7 @@ nav{
 	float: left;
 	text-align: center;
 	height:50px;
+	position: relative;
 }
 ul{
 	margin-top: 5px;
@@ -50,15 +51,31 @@ ul > li{
 	padding: 2px;
 	background-color:#FCE7EE; 
     color:#988C98;
+	border-color: #C7E9EB;
+	position: relative;
+	transition: background 0.5s ease-in-out;
+}
+ul>li:hover{
+	background-color:#e8cfd7; 
+    color:#615761;
+	border: 2px dashed #C7E9EB;
 }
 ul > li > ul{ 
 	display: none;
+	position: absolute;
+	margin-top: 4%;
+	margin-left:0%;
+	
 }
 ul > li:hover > ul{ 
 	display: block;
 }
 ul > li > ul > li{ 
 	float: none;
+	background-color:#e8cfd7; 
+    color:#615761;
+	border: 2px dashed #C7E9EB;
+	text-align: left;
 }
 li{
 	border-radius: 15%;
@@ -189,4 +206,15 @@ footer>p{
 hr{
 	margin-top: 20px;
 	border: 1px dashed #FAF1D0;
+}
+.button{
+    transition: background 0.5s ease-in-out;
+}
+
+.button:hover {
+    background: #FAF1D0; /* Fading color on hover */
+	color: #6B5C47;
+	border: 1px solid #988C98;
+	border-radius: 2px;
+	padding: 1px 0px;
 }
