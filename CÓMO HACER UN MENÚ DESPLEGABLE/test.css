@@ -28,12 +28,15 @@ header{
 h1,h2{
     color:#E55972;
 }
+
 /*
 nav>.menu>ul{
     list-style: none;
+
 }
 nav>.menu>ul>li{
     float:left;
+
 }
 nav>.menu>ul>li>ul{
     list-style: none;
@@ -45,7 +48,13 @@ nav>.menu>ul>li:hover>ul{
 nav>.menu>ul>li>a, nav>.menu>ul>li>ul>li>a{
     text-decoration: none;
     color:#000000;
+}
+nav{
+    height: 20%;
+    margin-top: 60px;
+    background-color: #e559735f;
 }*/
+
 nav{
     height:20%;
     margin-top: 60px;
@@ -65,9 +74,12 @@ color:#F8D7B6;
 nav>.menu>ul>li{
     float: left;
     margin-left: 40px;
+    width:90px; /* corrección para que no se mueva el menú al hacer el hover */
 }
 nav>.menu>ul{
     list-style: none;
+    position:absolute; /* corrección para que no se mueva el menú al hacer el hover */
+
 }
 nav>.menu>ul>li>ul{
     list-style: none;
@@ -99,17 +111,19 @@ main{
 }
 article{
     text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     background-color: white;
     width:50%;
     float:left;
 }
 img{
-    width:500px;
+    width:100%;
     height: auto;
 }
 #foto{
-    width:auto;
-    height: 150px;
+    width:100%;
+    height: auto;
 }
 h3{
     padding-top:35px;
@@ -125,11 +139,14 @@ h4{
     margin:0 auto;
 }
 footer{
-    height: 100px;
-    width: 100%;
     background-image: url(header.jpg);
     background-repeat: repeat;
+    height: 200px;
+    width: 100%;
+    float:left;
 }
 footer>a{
     background-color: #FCD789;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
 }
