@@ -1,0 +1,92 @@
+*{
+    padding:0;
+    margin:0;
+}
+main{
+    color: #484848;
+}
+
+/*ENCABEZADO*/
+header{
+    width:100%;
+    /*border-bottom: solid 1px #484848;*/
+}
+header>.logotipo>img{
+    margin:10px 10px 30px 20px;
+    width:40px;
+    height:40px;
+    float:left;
+
+}
+header>.logotipo>input{
+    height:30px;
+    float:left;
+    margin:15px 0 30px 20px;
+    width:250px;
+}
+header>nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    float:left;
+    margin: 20px 60px 30px 550px;
+}
+header>nav>ul{
+    list-style: none;
+    position:absolute;
+}
+header>nav>ul>li{
+    float:left;
+    margin-left: 40px;
+    width:90px;
+}
+header>nav>ul>li>a, header>nav>ul>li>ul>li>a{
+    text-decoration: none;
+    color:#484848;
+    font-weight: bold;
+}
+header>nav>ul>li>ul{
+    display:none;
+    list-style: none;
+}
+header>nav>ul>li:hover>ul{
+    display: block;
+}
+header>.imagenPerfil>img{
+    margin:10px 90px 30px 5px;
+    width:40px;
+    height:40px;
+    float:right;
+}
+
+/*CUERPO DE LA PÁGINA*/
+section{
+    width:1200px;
+    float:left;
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+    float:left;
+    background-color: blue;
+}
+section>.descubre{
+    margin: 0 auto;
+}
+section>.descubre>.descubreApartados{
+    height:70px;
+    width: 310px;
+    border: solid 1px #DBDBDB;
+    box-shadow: #DBDBDB;
+    float:left;
+    margin-left: 15px;
+}
+section>.descubre>.descubreApartados>p>img{
+    height:70px;
+    width: auto;
+    margin:0;
+}
+section>.descubre>.descubreApartados>p{
+    font-weight: bold;
+    /*margin: 25px 0 25px 15px;*/
+}
