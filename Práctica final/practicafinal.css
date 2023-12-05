@@ -56,6 +56,9 @@ header>.imagenPerfil>img{
     width:40px;
     height:40px;
     float:right;
+    border-radius:50%;
+    box-shadow: 0px 0px 5px 5px #DBDBDB;
+
 }
 
 /*CUERPO DE LA PÁGINA*/
@@ -77,7 +80,7 @@ section>.descubre>.descubreApartados{
     height:70px;
     width: 310px;
     border: solid 1px #DBDBDB;
-    box-shadow: #DBDBDB;
+    box-shadow: 5px 5px 8px  #DBDBDB;
     float:left;
     margin-left: 15px;
 }
@@ -86,7 +89,66 @@ section>.descubre>.descubreApartados>p>img{
     width: auto;
     margin:0;
 }
-section>.descubre>.descubreApartados>p{
+section>.descubre>.descubreApartados>p>a{
     font-weight: bold;
-    /*margin: 25px 0 25px 15px;*/
+    color:#484848;
+    text-decoration: none;
+    margin: 25px 0 25px 15px;
+}
+
+section>.presentamos{
+    margin:0 auto;
+}
+section>.presentamos>h1{
+    margin: 60px 0 10px 65px;
+}
+section>.presentamos>.contenidoPresentamos{
+    margin-left: 65px;
+    background-image: url(imagenes/visor_index.jpg);
+    background-repeat: no-repeat;
+    background-color: #a5d5ff62;
+    background-blend-mode:soft-light;
+    height:300px;
+    width: 1200px;
+}
+section>.presentamos>.contenidoPresentamos>h2{
+    padding: 50px 0 0 50px;
+    font-size: 1.25em;
+
+}
+section>.presentamos>.contenidoPresentamos>button{
+    margin: 20px 0 0 50px;
+    padding: 8px 25px;
+    font-size: 0.95em;
+    background-color: transparent;
+    border: 1px solid #4848486c;
+    border-radius: 2px;
+    color: #484848;
+    font-weight: bold;
+
+}
+
+section>.alojamientos{
+    width: 1200px;
+    float: left;
+    margin: 60px 0 10px 65px;
+}
+section>.alojamientos>.contenidoAlojamientos{
+    width:270px;
+    float:left;
+    margin: 15px 0 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+section>.alojamientos>.contenidoAlojamientos>img{
+    width:270px;   
+}
+section>.alojamientos>.contenidoAlojamientos>h3{
+    margin: 5px 0;
+    font-size: 12px;
+}
+section>.alojamientos>.contenidoAlojamientos>p{
+    font-weight: lighter;
+    color: #484848ab;
+    font-size: 15px;
 }
