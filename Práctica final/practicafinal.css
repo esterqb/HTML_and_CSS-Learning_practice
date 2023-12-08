@@ -4,6 +4,7 @@
 }
 main{
     color: #484848;
+    margin:0 auto;
 }
 
 /*ENCABEZADO*/
@@ -12,7 +13,7 @@ header{
     /*border-bottom: solid 1px #484848;*/
 }
 header>.logotipo>img{
-    margin:10px 10px 30px 20px;
+    margin:10px 0px 30px 40px;
     width:40px;
     height:40px;
     float:left;
@@ -28,7 +29,7 @@ header>nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
     float:left;
-    margin: 20px 60px 30px 550px;
+    margin: 20px 55px 30px 545px;
 }
 header>nav>ul{
     list-style: none;
@@ -65,16 +66,11 @@ header>.imagenPerfil>img{
 section{
     width:1200px;
     float:left;
+    margin: 0 auto;
 }
 
-/*FOOTER*/
-footer{
-    width:100%;
-    float:left;
-    background-color: blue;
-}
-section>.descubre{
-    margin: 0 auto;
+section>.descubre>h1{
+    margin: 15px 0px;
 }
 section>.descubre>.descubreApartados{
     height:70px;
@@ -93,9 +89,10 @@ section>.descubre>.descubreApartados>p>a{
     font-weight: bold;
     color:#484848;
     text-decoration: none;
-    margin: 25px 0 25px 15px;
+    margin: 15px 0 25px 15px;
+    padding-bottom:10px;
+    
 }
-
 section>.presentamos{
     margin:0 auto;
 }
@@ -116,7 +113,7 @@ section>.presentamos>.contenidoPresentamos>h2{
     font-size: 1.25em;
 
 }
-section>.presentamos>.contenidoPresentamos>button{
+section>.presentamos>.contenidoPresentamos>a>button{
     margin: 20px 0 0 50px;
     padding: 8px 25px;
     font-size: 0.95em;
@@ -125,7 +122,6 @@ section>.presentamos>.contenidoPresentamos>button{
     border-radius: 2px;
     color: #484848;
     font-weight: bold;
-
 }
 
 section>.alojamientos{
@@ -151,4 +147,204 @@ section>.alojamientos>.contenidoAlojamientos>p{
     font-weight: lighter;
     color: #484848ab;
     font-size: 15px;
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+    float:left;
+    margin: 60px 0px 10px 0px;
+    position:fixed(bottom);
+}
+footer>.footer{
+    width: 15%;
+    height: 300px;
+    color:#333333;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float:left;
+    margin: 5px 10px;
+}
+footer>.footer>.footerTexto>ul>li>a{
+    text-decoration: none;
+    color:#333333;
+    font-weight: lighter;
+}
+footer>.footer>.footerTexto>ul{
+    list-style: none;
+}
+footer>.footer>.footerTexto>ul>li{
+    padding: 0 0 4px 0;
+}
+footer>.footer>.footerTitulo>h4{
+    margin:0 0 20px 0;
+}
+footer>.footer>.footerTitulo{
+    margin:0 0 20px 0;
+}
+footer>.footerAbajo{
+    width: 100%;
+    margin:0;
+    float:left;
+}
+footer>.footerAbajo>p{
+    float:left;
+    margin: 5px 0 60px 950px;
+    width: 15%;
+}
+
+/*FRANCIA CSS*/
+.cuerpoFrancia{
+    width: 1200px;
+    float:left;
+    margin:0 250px;
+}
+.columnaUno{
+    float: left;
+}
+.columnaUno>form{
+    font-size:14px;
+    width: 355px;
+}
+.columnaUno>form>fieldset{
+    box-shadow: 5px 5px 8px  #DBDBDB;
+    border: 1px solid #ff5a60b1;
+    border-radius: 25px;
+}
+.columnaUno>form>fieldset>legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    margin:5px 10px;
+}
+.formulario1{
+    margin:5px 18px;
+}
+.columnaUno,.columnaTorre{
+    margin:50px 10px 200px 10px;
+    width: 390px;
+    height:550px;
+    float: left;
+}
+.formulario{
+    width: 220px;
+    border-radius: 20px;
+    border: 1px solid #DBDBDB;
+    margin:5px 10px;
+}
+
+#radio{
+    margin:5px 18px;
+}
+.textarea{
+    margin:5px 18px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    width: 260px;
+    height:80px;
+    padding:10px;
+    color:#484848;
+    font-size: 12px;
+}
+.button{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #FF5A5F;
+    padding: 10px 30px;
+    border: solid #ff5a5f 2px;
+    box-shadow: 5px 5px 8px  #DBDBDB;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:10px 200px;
+}
+
+.button:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #ffa2a5;
+    color: #fff;
+    border: 2px solid #FF5A5F;
+}
+.columnaTorre>img{
+    width: 355px;
+    padding:10px 0;
+}
+.fotosApartamento{
+    width: 355px;
+    height: 50px;
+    float: left;
+}
+.fotosApartamento>img{
+    width: 71px;
+    height: 50px;
+}
+
+/*CSS ROMA*/
+.cuerpoRoma{
+    width: 1200px;
+    float:left;
+    margin:0 250px;
+}
+.cuerpoRoma>table{
+    width: 390px;
+    height: 550px;
+}
+.columnaRoma1>table>caption>h4, .columnaRoma2>h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    width:570px;
+}
+.columnaRoma2>h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 0 0 2px 0;
+}
+td{
+    border:solid 1px #ff5a6043;
+    border-collapse:collapse;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+th{
+    border-collapse:collapse;
+    vertical-align: top;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color:#FF5A5F;
+}
+.tableImagen{
+    width:150px;
+    height:190px;
+    vertical-align: middle;
+}
+.columnaRoma1>img{
+    width: 355px;
+    padding:10px 0;
+}
+.columnaRoma1,.columnaRoma2{
+    margin:50px 10px 300px 10px;
+    width: 580px;
+    height:550px;
+    float: left;
+}
+.columnaRoma2>img{
+    width: 355px;
+}
+.fotosApartamento{
+    width: 355px;
+    height: 50px;
+    float: left;
+}
+.fotosApartamento>img{
+    width: 71px;
+    height: 50px;
 }
