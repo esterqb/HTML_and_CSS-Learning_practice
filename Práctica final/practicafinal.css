@@ -10,9 +10,11 @@ main{
 /*ENCABEZADO*/
 header{
     width:100%;
+    position: fixed;
+    background-color: white; /*Solucionar */
     /*border-bottom: solid 1px #484848;*/
 }
-header>.logotipo>img{
+header>.logotipo>a>img{
     margin:10px 0px 30px 40px;
     width:40px;
     height:40px;
@@ -68,7 +70,10 @@ section{
     float:left;
     margin: 0 auto;
 }
+section>.descubre{
+    margin:130px 0 0 55px;
 
+}
 section>.descubre>h1{
     margin: 15px 0px;
 }
@@ -197,7 +202,7 @@ footer>.footerAbajo>p{
 .cuerpoFrancia{
     width: 1200px;
     float:left;
-    margin:0 250px;
+    margin:50px 0 10px 250px;
 }
 .columnaUno{
     float: left;
@@ -288,7 +293,7 @@ footer>.footerAbajo>p{
 .cuerpoRoma{
     width: 1200px;
     float:left;
-    margin:0 250px;
+    margin:50px 0 10px 250px;
 }
 .cuerpoRoma>table{
     width: 390px;
@@ -347,4 +352,208 @@ th{
 .fotosApartamento>img{
     width: 71px;
     height: 50px;
+}
+
+/*Mensajes CSS*/
+.cuerpoMensajes{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 99%;
+    margin:15px 60px;
+    float: left;
+}
+.cuerpoMensajes1{
+    margin:80px 0 0 0;
+    width: 30%;
+    border: solid 1px #DBDBDB;
+    float: left;
+    height: 520px;
+}
+.mensajeUsuario>img{
+    margin:30px 20px 0px 0px;
+    width:70px;
+    height:70px;
+    float:right;
+    border-radius:50%;
+    border:1px solid black;
+}
+.tituloMensajes, .conversacionTitulo{
+    border-bottom: solid 1px #DBDBDB;
+    height: 70px;
+    width: 100%;
+}
+.tituloMensajes>h2{
+    padding:18px 10px;
+    color:black;
+    font-weight: lighter;
+    float: left;
+}
+.conversacionTitulo>h4{
+    padding: 18px;
+    color:black;
+    font-weight: lighter;
+    float: left;
+}
+.tituloMensajes>img{
+    width:20px;
+    height:20px; 
+    float:right;
+    margin: 25px 20px 0 0px;
+}
+.iconosMensajes>img{
+    width:20px;
+    height:20px; 
+    float:left;
+    margin: 5px 0px 0 20px;
+}
+.iconosMensajes{
+    width:40%;
+    float:right;
+    margin: 0 0px 0 0;
+}
+.mensajeUsuario{
+    border-bottom: solid 1px #DBDBDB;
+    height: 120px;
+    text-align: justify;
+    float: left;
+    width: 100%;
+}
+.mensajeUsuario>p{
+    font-size: 13px;
+    padding: 10px;
+    width:70%;
+}
+.mensajeUsuario>h5{
+    padding:30px 10px 0 10px;
+}
+.mensajeUsuario:hover{
+    background-color: #DBDBDB;
+    border-radius: 15px;
+}
+
+.cuerpoMensajes2{
+    width: 40%;
+    margin:80px 0 0 0;
+    border: solid 1px #DBDBDB;
+    float: left;
+    height:520px;
+}
+.conversacionTitulo{
+    border-bottom: solid 1px #DBDBDB;
+    height: 70px;
+    width: 100%;
+}
+.conversacionTitulo>p{
+    font-size: 10px;
+    padding: 22px 0 0 0;
+    width:70%;
+    float: left;
+}
+.boton>button{
+    width:140px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 0 0 0 10px;
+    border: solid 2px black;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background 0.2s ease-in-out;
+}
+.boton>button:hover{
+    background: #DBDBDB;
+}
+.panelOculto{
+    /*display: none;*/
+    float:left;
+    height:520px;
+    width:300px;
+    margin: -65px 0 0 241px;
+}
+.panelOculto:hover>.cuerpoPanel{
+    display: block;
+    float:left;
+}
+.cuerpoPanel{
+    border:#DBDBDB 1px solid;
+    float:left;
+    height:520px;
+    width: 100%;
+}
+.panelEstancia{
+    text-align: justify;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.panelEstancia>h5{
+    margin:15px 0 0 0;
+}
+.panelEstancia>form{
+    margin:15px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+    background-color: #D2D3D5;
+    padding:10px
+}
+.panelEstancia>form>img{
+    width: 100px;
+    background-color: white;
+}
+.panelEstancia>form>img:hover{
+    background-color: yellow;
+}
+.panelEstancia>img{
+    width:70%;
+}
+.cuerpoConversación{
+    width: 100%;
+}
+.fotosConver{
+    margin:30px 20px 0px 20px;
+    width:50px;
+    height:50px;
+    float:left;
+    border-radius:50%;
+    border:1px solid black;
+}
+.chat>h5{
+    padding:35px 10px 0 10px;
+}
+.chat>p{
+    font-size: 12px;
+}
+.cuerpoConversacion>h6{
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    padding:4px 0;
+    border: 1px solid #484848;
+    border-radius: 25px;
+    background-color: #DBDBDB;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.cuadroChat{
+    width: 100%;
+    height: 18%;
+    float: left;
+}
+.cuadroChat>img{
+    width:30px;
+    height:30px; 
+    float:left;
+    padding:10px 10px 0 15px;
+}
+.cuadroChat>input{
+    height: 70%;
+    width: 70%;
+    border-color: 1px solid #DBDBDB;
+    border-radius: 25px;
+    padding:5px 10px 5px 10px;
+    color:#484848;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin:10px 10px 10px 30px;
 }
