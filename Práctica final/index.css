@@ -11,62 +11,84 @@ main{
 header{
     width:100%;
     position: fixed;
-    background-color: white; /*Solucionar */
-    /*border-bottom: solid 1px #484848;*/
+    background-color: white;
+    border-bottom: solid 1px #DBDBDB;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logotipo{
+    display: flex;
+    align-items: center;
+    margin:5px 10px;
 }
 header>.logotipo>a>img{
-    margin:10px 0px 30px 40px;
     width:40px;
     height:40px;
-    float:left;
-
+    margin:0 15px 0 40px;
 }
 header>.logotipo>input{
     height:30px;
-    float:left;
-    margin:15px 0 30px 20px;
     width:250px;
+    border:1px solid #DBDBDB;
+    box-shadow: 5px 5px 8px  #DBDBDB;
 }
-header>nav{
+.menuNav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.menuNav>nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
-    float:left;
-    margin: 20px 55px 30px 545px;
+    margin-top:27px;
 }
-header>nav>ul{
+.menuNav>nav>ul{
     list-style: none;
-    position:absolute;
+    text-align: center;
+    display: flex;
 }
-header>nav>ul>li{
-    float:left;
-    margin-left: 40px;
+.menuNav>nav>ul>li{
     width:90px;
+    position: relative;
 }
-header>nav>ul>li>a, header>nav>ul>li>ul>li>a{
+.menuNav>nav>ul>li>a, .menuNav>nav>ul>li>ul>li>a{
     text-decoration: none;
     color:#484848;
     font-weight: bold;
 }
-header>nav>ul>li>ul{
+.menuNav>nav>ul>li>ul{
     display:none;
     list-style: none;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    padding: 10px;
 }
-header>nav>ul>li:hover>ul{
-    display: block;
+.menuNav>nav>ul>li:hover>ul{
+    display: flex;
+    flex-direction: column;
+    left:20%;
 }
-header>.imagenPerfil>img{
-    margin:10px 90px 30px 5px;
+.imagenPerfil{
+    padding:5px 0;
+
+}
+.menuNav>.imagenPerfil>img{
     width:40px;
     height:40px;
-    float:right;
     border-radius:50%;
     box-shadow: 0px 0px 5px 5px #DBDBDB;
-
+    margin: 5px 60px 5px 0px;
 }
 
-/*CUERPO DE LA PÁGINA*/
+/*CONTENEDOR*/
+.container{
+    margin:0 auto;
+    max-width: 1200px;
+}
 section{
-    width:1200px;
     float:left;
     margin: 0 auto;
 }
@@ -85,18 +107,18 @@ section>.descubre>.descubreApartados{
     float:left;
     margin-left: 15px;
 }
-section>.descubre>.descubreApartados>p>img{
+section>.descubre>.descubreApartados>img{
     height:70px;
     width: auto;
     margin:0;
+    float: left;
 }
-section>.descubre>.descubreApartados>p>a{
+section>.descubre>.descubreApartados>p{
     font-weight: bold;
     color:#484848;
     text-decoration: none;
-    margin: 15px 0 25px 15px;
-    padding-bottom:10px;
-    
+    margin: 25px 0 0px 15px;  
+    float: left;
 }
 section>.presentamos{
     margin:0 auto;
@@ -132,7 +154,9 @@ section>.presentamos>.contenidoPresentamos>a>button{
 section>.alojamientos{
     width: 1200px;
     float: left;
-    margin: 60px 0 10px 65px;
+    margin: 60px 0 0px 65px;
+    border-bottom: solid 1px #DBDBDB;
+    padding-bottom:50px;
 }
 section>.alojamientos>.contenidoAlojamientos{
     width:270px;
@@ -157,52 +181,60 @@ section>.alojamientos>.contenidoAlojamientos>p{
 /*FOOTER*/
 footer{
     width:100%;
-    float:left;
-    margin: 60px 0px 10px 0px;
-    position:fixed(bottom);
+    margin: 0px auto 5px auto;
+    max-width: 1000px;
+    padding-left:150px;
 }
-footer>.footer{
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top:25px;
+}
+.footer{
     width: 15%;
-    height: 300px;
+    height: 200px;
     color:#333333;
     font-size: 0.9em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    float:left;
-    margin: 5px 10px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    margin: 0px 10px;
 }
-footer>.footer>.footerTexto>ul>li>a{
+.footer>.footerTexto>ul>li>a{
     text-decoration: none;
     color:#333333;
-    font-weight: lighter;
+    font-weight: normal;
 }
-footer>.footer>.footerTexto>ul{
+.footer>.footerTexto>ul{
     list-style: none;
 }
-footer>.footer>.footerTexto>ul>li{
+.footer>.footerTexto>ul>li{
     padding: 0 0 4px 0;
 }
-footer>.footer>.footerTitulo>h4{
+.footer>.footerTitulo>h4{
     margin:0 0 20px 0;
 }
-footer>.footer>.footerTitulo{
+.footer>.footerTitulo{
     margin:0 0 20px 0;
 }
-footer>.footerAbajo{
+.footerAbajo{
+    border-top: solid 1px #DBDBDB;
     width: 100%;
-    margin:0;
-    float:left;
+    color:#333333;
+    font-size: 0.9em;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    margin-left:15%;
+    width: 65%;
 }
-footer>.footerAbajo>p{
-    float:left;
-    margin: 5px 0 60px 950px;
-    width: 15%;
+.footerAbajo>p{
+    text-align: right;
 }
 
 /*FRANCIA CSS*/
 .cuerpoFrancia{
-    width: 1200px;
-    float:left;
-    margin:50px 0 10px 250px;
+    max-width: 1200px;
+    padding-left:430px;
+    padding-top: 50px;
+    margin:0 auto;
 }
 .columnaUno{
     float: left;
@@ -291,11 +323,13 @@ footer>.footerAbajo>p{
 
 /*CSS ROMA*/
 .cuerpoRoma{
-    width: 1200px;
-    float:left;
-    margin:50px 0 10px 250px;
+    max-width: 1200px;
+    margin:0 auto;
+    padding-left:250px;
+    padding-top: 50px;
 }
-.cuerpoRoma>table{
+.columnaRoma1>table{
+    border-collapse: collapse;
     width: 390px;
     height: 550px;
 }
@@ -427,7 +461,6 @@ th{
 }
 .mensajeUsuario:hover{
     background-color: #DBDBDB;
-    border-radius: 15px;
 }
 
 .cuerpoMensajes2{
@@ -463,16 +496,12 @@ th{
 .boton>button:hover{
     background: #DBDBDB;
 }
-.panelOculto{
-    /*display: none;*/
+.tercerBloque{
+    display: block;
     float:left;
     height:520px;
     width:300px;
-    margin: -65px 0 0 241px;
-}
-.panelOculto:hover>.cuerpoPanel{
-    display: block;
-    float:left;
+    margin: 80px 0 0 0px;
 }
 .cuerpoPanel{
     border:#DBDBDB 1px solid;
@@ -506,22 +535,75 @@ th{
 .panelEstancia>img{
     width:70%;
 }
-.cuerpoConversación{
+.cuerpoConversacion{
     width: 100%;
+    margin:-11px 0 0 0;
+    height:450px;
 }
-.fotosConver{
-    margin:30px 20px 0px 20px;
+.fotosConver1{
+    margin:10px 20px 10px 20px;
     width:50px;
     height:50px;
     float:left;
     border-radius:50%;
     border:1px solid black;
 }
-.chat>h5{
-    padding:35px 10px 0 10px;
+.fotosConver2{
+    margin:-15px 30px 0 0;
+    width:50px;
+    height:50px;
+    float:right;
+    border-radius:50%;
+    border:1px solid black;
 }
-.chat>p{
+.chat1>h5{
+    padding:17px 10px 0 10px;
+}
+.h5{
+    width:25%;
+    height: 20%;
+    float:left;
+    text-align: end;
+    margin:17px 0 0px 50px;
+}
+.chat2>h5{
+    float: left;
+}
+.chat1{
+    width: 100%;
+    height:100px;
+    float: left;
+    margin: 15px 0 0 0;
+}
+.chat2{
+    width: 100%;
+    height:100px;
+    float: left;
+}
+.respuesta{
+    width:20%;
+    height: 48%;
+    float:left;
+    margin-right: 40px;
+    text-align: right;
+}
+.chat1>p{
     font-size: 12px;
+}
+.chat2>p{
+    font-size: 12px;
+    float: left;
+    width: 25%;
+    margin:0px 0 0px 50px;
+}
+.lectura{
+    font-size:10px;
+    width:50%;
+    height: 100%;
+    float: left;
+}
+.lectura>p{
+    margin: 80px 0 0 10px;
 }
 .cuerpoConversacion>h6{
     width: 90px;
@@ -532,13 +614,15 @@ th{
     border-radius: 25px;
     background-color: #DBDBDB;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .cuadroChat{
     width: 100%;
-    height: 18%;
+    height:80px;
     float: left;
+    margin: 25px 0 0 0px;
+    border-top:solid 1px #DBDBDB;
 }
 .cuadroChat>img{
     width:30px;
@@ -547,7 +631,7 @@ th{
     padding:10px 10px 0 15px;
 }
 .cuadroChat>input{
-    height: 70%;
+    height: 20px;
     width: 70%;
     border-color: 1px solid #DBDBDB;
     border-radius: 25px;
