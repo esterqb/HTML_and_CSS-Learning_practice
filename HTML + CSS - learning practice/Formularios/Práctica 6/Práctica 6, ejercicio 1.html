@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <title>Práctica 6, ejercicio 1</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <h1>Ejercicio 1</h1>
+        <p>Crear el código HTML que corresponde a la siguiente imagen.</p>
+
+        <form action="Práctica 6, ejercicio 1.html">
+            <h1>Rellena tu CV</h1>
+
+            <!--NOMBRE-->
+            <label>Nombre</label>
+            <br>
+            <input type="text" name="name" value="" size="20" maxlenght="30" required>
+            <br>
+
+            <!--APELLIDO-->
+            <label>Apellido</label>
+            <br>
+            <input type="text" name="surname" value="" size="20" maxlenght="30" required>
+            <br>
+
+            <!--CONTRASEÑA-->
+            <label>contraseña</label>
+            <br>
+            <input type="password" name="password" value="" size="20" maxlenght="30" required>
+            <br>
+
+            <!--DNI-->
+            <label>DNI</label>
+            <br>
+            <input type="text" name="ID" value="" size="20" minlenght="9" maxlenght="9" required/>
+            <br>
+
+            <!--SEXO-->
+            <label>Sexo</label>
+            <br>
+            <input type="radio" name="gender" value="M" checked>Hombre
+            <br>
+            <input type="radio" name="gender" value="F">Mujer
+            <br>
+            <br>
+
+            <!--FOTO-->
+            <label>Incluir mi foto</label>
+            <input type="text" readonly style="background-color:#E8E8E8;" name="photo" size="20" maxlength="30">
+            <button type="file" value="photo">Examinar...</button>
+            <br>
+            <br>
+
+            <!--SUSCRIBIRME-->
+            <input type="checkbox" name="newsletter" size= "20" maxlenght="30" checked>
+            <label>Suscribirme al boletín de novedades</label>
+            <br>
+            <br>
+
+            <!--GUARDAR Y BORRAR-->
+            <button type="submit" name="save">guardar cambios</button>
+            <button type="reset" value="delete">borrar los datos introducidos</button>
+        </form>
+    </body>
+</html>
