@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Airbnb - París</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../index.css">
+    </head>
+
+    <body>
+        <main>
+            <!--ENCABEAZDO-->
+            <header>
+                <div class="logotipo">
+                    <a href="../../index.html" target="_blank"><img src="../../imagenes/logo_ribera.png" alt="Logotipo de la empresa"></a>
+                    <input type="search" name="buscador">
+                </div>
+                <div class="menuNav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Guardados</a></li>
+                            <li><a href="#">Viajes</a>
+                                <ul>
+                                    <li><a href="../paris/index.html" target="_blank">París</a></li>
+                                    <li><a href="../roma/index.html" target="_blank">Roma</a></li>
+                                    <li><a href="#">Londres</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../mensajes/index.html" target="_blank">Mensajes</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                        </ul>
+                    </nav>
+                    <div class="imagenPerfil">
+                        <img src="../../imagenes/usuario.png" alt="Tu imagen de perfil">
+                    </div>
+                </div>
+            </header>
+
+            <!--CUERPO-->
+            <div class="cuerpoFrancia">
+                <div class="columnaUno">
+                    <form action="../paris/index.html">
+                        <fieldset>
+                            <legend>Información del usuario</legend>
+                                <label class="formulario1">Nombre y apellidos</label>
+                                <br>
+                                <input type="text" name="name" class="formulario">
+                                <br>
+                                <label class="formulario1">Email</label>
+                                <br>
+                                <input type="email" name="email" class="formulario">
+                                <br>
+                                <label class="formulario1">Teléfono</label>
+                                <br>
+                                <input type="text" name="telephone" class="formulario">
+                                <br><br>
+                        </fieldset>
+                        <br><br>
+                        <fieldset>
+                            <legend>Añade fechas y descubre los precios</legend>
+                                <label class="formulario1">Entrada</label>
+                                <br>
+                                <input type="datetime-local" name="reservaEntrada" class="formulario">
+                                <br>
+                                <label class="formulario1">Salida</label>
+                                <br>
+                                <input type="datetime-local" name="reservaSalida" class="formulario">
+                                <br>
+                                <label class="formulario1">Huéspedes</label>
+                                <br>
+                                <select class="formulario">
+                                    <option>1 viajero</option>
+                                    <option>2 viajeros</option>
+                                    <option>3-4 viajeros</option>
+                                </select>
+                                <br>
+                                <label class="formulario1">Niños (de 2 a 12 años)</label>
+                                <br>
+                                <select class="formulario">
+                                    <option>1 niño</option>
+                                    <option>2 niños</option>
+                                    <option>3-4 niños</option>
+                                </select>
+                                <br>
+                                <label class="formulario1">Bebés (menos de 2)</label>
+                                <br>
+                                <select class="formulario">
+                                    <option>1 bebé</option>
+                                    <option>2 bebés</option>
+                                    <option>3-4 bebés</option>
+                                </select>
+                                <br>
+                                <label class="formulario1">¿Viajas con un animal de compañía?</label>
+                                <br>
+                                <input type="radio" value="s" id="radio">Sí
+                                <input type="radio" value="n" id="radio" checked>No
+                                <br>
+                                <label class="formulario1">Marca la casilla si viajas con un animal de asistencia</label>
+                                <input type="checkbox" id="checkbox">
+                                <br><br>
+
+                        </fieldset>           
+                        <br><br>
+                        <fieldset>
+                            <legend>Sugerencias, quejas o reclamaciones</legend>
+                                <textarea class="textarea">Escriba aquí sus sugerencias, quejas o reclamaciones que desee dejar saber a la empresa.
+                                </textarea>
+                                <br><br>
+                        </fieldset>
+                        <button type="submit" name="boton" class="button" value="enviar">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="columnaTorre">
+                        <h2>Apartamento en París, Francia</h2>
+                        <h4>Rue de Monttessuy</h4>
+                        <img src="../../fotos/torreE.jpg" alt="Imagen Torre Eiffel">
+                        <div class="fotosApartamento">
+                            <img src="../../fotos/imagen1.webp" alt="Imagen del apartamento">
+                            <img src="../../fotos/imagen2.webp" alt="Imagen del apartamento">
+                            <img src="../../fotos/imagen3.webp" alt="Imagen del apartamento">
+                            <img src="../../fotos/imagen4.webp" alt="Imagen del apartamento">
+                            <img src="../../fotos/imagen5.webp" alt="Imagen del apartamento">
+                            <img src="../../fotos/imagen6.webp" alt="Imagen del apartamento">
+                            <img src="../../fotos/ascensor.jpg" alt="Imagen del ascensor">
+                            <img src="../../fotos/icono.png" alt="Icono ver más">
+                            <p>Source: <a href="https://www.airbnb.es/rooms/28341525?source_impression_id=p3_1701879526_UlNtxd06fQioSPJf&guests=1&adults=1&infants=5&modal=PHOTO_TOUR_SCROLLABLE" target="_blank">Airbnb</a></p>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <!--PIE DE PÁGINA-->
+        <footer>
+            <div class="footerContainer">
+                <!--Columna 1 del footer-->
+                <div class="footer">
+                    <div class="footerTitulo">
+                        <h4>Airbnb</h4>
+                    </div>
+                    <div class="footerTexto">
+                        <ul>
+                            <li><a href="#">Empleo</a></li>
+                            <li><a href="#">Empresa</a></li>
+                            <li><a href="#">Política</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                            <li><a href="#">Diversidad e inclusión</a></li>
+                            <li><a href="#">Datos de la empresa</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Columna 2 del footer-->
+                <div class="footer">
+                    <div class="footerTitulo">
+                        <h4>Descubre Airbnb</h4>
+                    </div>
+                    <div class="footerTexto">
+                        <ul>
+                            <li><a href="#">Confianza y Seguridad</a></li>
+                            <li><a href="#">Crédito de viaje</a></li>
+                            <li><a href="#">Airbnb Citizen</a></li>
+                            <li><a href="#">Viajes de negocios</a></li>
+                            <li><a href="#">Guías</a></li>
+                            <li><a href="#">Airbnbmag</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Columna 3 del footer-->
+                <div class="footer">
+                    <div class="footerTitulo">
+                        <h4>Hospedar</h4>
+                    </div>
+                    <div class="footerTexto">
+                        <ul>
+                            <li><a href="#">Razones para hospedar</a></li>
+                            <li><a href="#">Invita a anfitriones</a></li>
+                            <li><a href="#">Hospitalidad</a></li>
+                            <li><a href="#">Ser un anfitrión Responsable</a></li>
+                            <li><a href="#">Diversidad e inclusión</a></li>
+                            <li><a href="#">Centro de la comunidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Columna 4 del footer-->
+                <div class="footer">
+                    <div class="footerTitulo">
+                        <img src="../../imagenes/redes_sociales.png" alt="Logotipo de Facebook">
+                    </div>
+                    <div class="footerTexto">
+                        <ul>
+                            <li><a href="#">Condiciones</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                            <li><a href="#">Mapa del sitio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Fila 2 del footer-->
+            <div class="footerAbajo">
+                <p>&copy; Airbnb Ribera 2018.</p>
+            </div>
+        </footer>
+    </body>
+</html>
