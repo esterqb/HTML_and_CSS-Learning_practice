@@ -1,0 +1,4 @@
+.enlazado:link{color:black}
+.enlazado:visited{color:blue}
+.enlazado:hover{color: green;}
+.tabla{border:solid; border-width:1px; border-color:black;}
